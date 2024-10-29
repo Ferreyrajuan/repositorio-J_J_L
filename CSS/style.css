@@ -86,7 +86,7 @@ body {
 /* fin header */
 
 /* inicio cuerpo */
-general {
+.general {
     height: 100%;
     margin: 0;
     justify-content: center; /* Centra horizontalmente */
@@ -95,13 +95,13 @@ general {
     font-family: Arial, sans-serif;
   }
 
-  section {
+  .inicio {
     display: flex;
     width: auto;
     height: 500px;
   }
   
-  section img {
+  .inicio img {
     width: 0px;
     flex-grow: 1;
     object-fit: cover;
@@ -111,21 +111,125 @@ general {
   
   /* hover es una pseudo clase */
   
-  section img:hover {
+  .inicio img:hover {
     cursor: zoom-in;
     width: 90%;
     opacity: 1;
     filter: contrast(120%);
   }
 
+  .lista-cabecera {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+  }
+  .lista1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style-type: none; /* Quita los puntos de la lista */
+    margin: 20px; 
+}
+
+.infol1 {
+    background-color: #007BFF; 
+    border-radius: 10px; /* Bordes redondeados */
+    padding: 20px; 
+    color: white; /* color del texto */
+    max-width: 300px; /* Ancho máximo del cuadro */
+}
+
+.infol1 img {
+    width: 50px;
+    height: auto; 
+    top: 10px; 
+    right: 10px; 
+}
+
+.infol1 h3 {
+    margin-top: 70px;
+    font-size: 36px; 
+}
+
+.infol1 p {
+    margin-top: 10px; 
+    font-size: 15px; 
+}
+
+.lista2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style-type: none;
+    margin: 20px; 
+}
+
+.infol2 {
+    background-color: #007BFF; 
+    border-radius: 10px; 
+    padding: 20px; 
+    color: white; 
+    max-width: 300px;
+}
+
+.infol2 img {
+    width: 50px; 
+    height: auto; 
+    top: 10px;
+    right: 10px; 
+}
+
+.infol2 h3 {
+    margin-top: 70px;
+    font-size: 36px; 
+}
+
+.infol2 p {
+    margin-top: 10px; /* Espaciado superior para el párrafo */
+    font-size: 15px; /* Tamaño del texto del párrafo */
+}
+
+.lista3 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style-type: none; 
+    margin: 20px;
+}
+
+.infol3 {
+    background-color: #007BFF; 
+    border-radius: 10px; 
+    padding: 20px; 
+    color: white;
+    max-width: 300px; 
+}
+
+.infol3 img {
+    width: 50px; 
+    height: auto; 
+    top: 10px; 
+    right: 10px; 
+}
+
+.infol3 h3 {
+    margin-top: 70px; 
+    font-size: 36px;
+}
+
+.infol3 p {
+    margin-top: 10px; 
+    font-size: 15px;
+}
+
   .title h1 {
     font-size: 9em;
     font-family: 'Playfair Display'; /* Fuente elegante */
-    background: linear-gradient(45deg, #725134, #6d573c); /* Degradado en tonos cálidos */
+    background: linear-gradient(45deg, #725134, #6d573c); 
     background-clip: text; 
     color: transparent;
     text-align: center;
-    text-shadow: 5px 5px 2px rgba(82, 65, 48, 0.315); /* Sombra sutil */
+    text-shadow: 5px 5px 2px rgba(82, 65, 48, 0.315); 
     padding-top: 10px;
 }
 
@@ -135,20 +239,19 @@ general {
     flex-direction: column;
     gap: 20px;
     
-    text-align: center; /* Centra el texto dentro de cada párrafo */
+    text-align: center; 
     margin: 100px 200px;
 }
 
     .parrafos p {
         font-size: 3em;
-        font-family: 'Playfair Display'; /* Fuente elegante */
-        background: linear-gradient(45deg, #725134, #6d573c); /* Degradado en tonos cálidos */
+        font-family: 'Playfair Display'; 
+        background: linear-gradient(45deg, #725134, #6d573c); 
         background-clip: text; 
         color: transparent;
         text-align: center;
-        text-shadow: 5px 5px 2px rgba(82, 65, 48, 0.315); /* Sombra sutil */
+        text-shadow: 5px 5px 2px rgba(82, 65, 48, 0.315); 
         margin-bottom: 20px;
-
 }
 /* fin cuerpo */
 /* Footer */
