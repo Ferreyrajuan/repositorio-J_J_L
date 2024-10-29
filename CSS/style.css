@@ -15,17 +15,12 @@ body {
 }
 
 /* inicio header */
-.container {
-    max-width: 1200px;
-    margin: 0 auto;
-}
 
 .encabezado-principal {
-    background-image: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/img_1.jfif);
+    background: #a8dadc;
     background-position: center left;
-    background-repeat: no-repeat;
     background-size: cover;
-    min-height: 95vh;
+    height: 18vh;
     display: flex;
     align-items: center;
 }
@@ -38,12 +33,31 @@ body {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    width: 100%;
+}
+
+.logo {
+    display: flex;
+    /* Permite alinear el logo y el texto */
+    align-items: center;
+    /* Centra verticalmente */
 }
 
 .logo-alquimia {
-    color: #b06994;
+    color: #a47fd9;
     font-size: 30px;
     font-weight: 800;
+    margin-left: 10px;
+    padding-right: 20px;
+    /* Espacio entre el logo y el texto */
+}
+
+.logo-img {
+    width: 80px;
+    /* Ajusta el tamaño del logo */
+    height: auto;
+    /* Mantiene la proporción */
+    margin-top: 12px;
 }
 
 .encabezado-principal .navegacion-menu ul li {
@@ -53,15 +67,21 @@ body {
 
 .encabezado-principal .navegacion-menu ul li a {
     font-size: 18px;
-    padding: 20px;
-    color: #f460c0;
-    display: block;
-    font-weight: 600;
+    padding: 10px;
+    color: #ae6ff0;
+    display: flex;
+    font-weight: 500;
+    justify-content: center;
+    flex-grow: 1;
 }
 
 .encabezado-principal .navegacion-menu ul li a:hover {
-    color: #ea1881;
-    display: block;
+    color: #7557e1;
+    display: flex;
+}
+
+.encabezado-content {
+    text-align: center;
 }
 /* fin header */
 
