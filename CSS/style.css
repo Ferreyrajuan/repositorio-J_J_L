@@ -2,8 +2,8 @@
 body {
     font-family: 'Poppins', sans-serif;
     background-image: url("/IMG/q.jpg");
-    background-size: 100% 100%; /* Ajusta la imagen al 100% de ancho y alto del fondo */
-    background-repeat: no-repeat;
+    background-size: cover; /* Ajusta la imagen al 100% de yancho y alto del fondo */
+    background-repeat: repeat-y;
 }
 
 * {
@@ -234,11 +234,9 @@ body {
 }
 
 .parrafos {
- 
     display: flex;
     flex-direction: column;
     gap: 20px;
-    
     text-align: center; 
     margin: 100px 200px;
 }
@@ -258,8 +256,10 @@ body {
 .footer {
     background-color: #a8dadc;
     color: #FFF;
-    text-align: center;
     padding: 20px 0;
+    margin-top: auto;
+    padding: 20px;
+    text-align: center;
 }
 
 .footer-content {
