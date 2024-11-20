@@ -1,324 +1,369 @@
 * {
+  box-sizing: border-box;
+  
+  }
+  
+  .general{
+    width: 100%; /*define el ancho del cuerpo*/
+    margin: 0; /*da un mangen superior e inferior de 0 y los margenes laterales automaticos*/
+    background: #ffffff url(/img/q.jpg) center/cover no-repeat;
+  
+  }
+  /* inicio header */
+  
+  /* Encabezado principal */
+  .encabezado-principal {
+    background-color: #e0b9a2; /* Color de fondo del encabezado */
+    height: 20vh; /* Ajustar la altura del encabezado */
+    display: flex;
+    align-items: center; /* Centrar verticalmente */
+    padding: 0 10px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.5); /* Sombra */
+  }
+  .logo {
+    display: flex;
+    align-items: center;
+  }
+  .logo img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    margin-right: 10px;
+    object-fit: cover;
+  }
+  .logo a {
+    color:black;
+    font-size: 30px;
+    font-weight: 800;
+    text-decoration: none;
+  }
+  .logo a:hover {
+    color: #45084b;
+  }
+  /* Barra de navegación debajo del encabezado */
+  .barra-menu {
+    
+    height: 10vh; /* Aumentar la altura de la barra */
+    background-color: #b08972; /* Color más oscuro para la barra */
+    display: flex;
+    
+  
+    text-align: center;
+    align-items: center; /* Centrar verticalmente */
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2); /* Sombra */
+    margin-top: 10; /*margen superior para que no quede pegado al encabezado */
+    margin-bottom: 1px;
+  }
+  
+  /* Menú de navegación */
+  .navegacion-menu ul {
+    align-items: center;
+    list-style: none;
+    display: flex;
     margin: 0;
     padding: 0;
-    }
-    
-    .general{
-      width: 100%; /*define el ancho del cuerpo*/
-      margin: 0; /*da un mangen superior e inferior de 0 y los margenes laterales automaticos*/
-      background: #ffffff url(../img/q.jpg) center/cover no-repeat;
-      /* background-image: url("q.jpg");/*da la imagen de fondo del cuerpo
-      background-size: cover; Ajusta la imagen al 100% de ancho y alto del fondo 
-      background-repeat: no-repeat;no repetira la imagen de fondo*/
-    }
-    
-    /* inicio header */
-    
-    /* Encabezado principal */
-    .encabezado-principal {
-      background-color: #e0b9a2; /* Color de fondo del encabezado */
-      height: 20%; /* Altura del encabezado */
-      display: flex; /* Alinear los elementos horizontalmente */
-      align-items: center; /* Centrar elementos verticalmente */
-      justify-content: space-between; /* Espacio entre logo y menú */
-      padding: 0 20px; /* Espaciado interno */
-      box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2); /* Sombra */
-    }
-    
-    /* Estilo del logo */
-    .logo {
-      display: flex; /* Alinear imagen y texto en línea */
-      align-items: center; /* Centrar verticalmente */
-    }
-    
-    .logo img {
-      width: 80px; /* Ajustar ancho */
-      border-radius: 50%; /* Hacer la imagen circular */
-      margin-right: 10px; /* Espaciado entre imagen y texto */
-      object-fit: cover; /* Asegurar que la imagen se recorte adecuadamente */
-    }
-    
-    .logo a {
-      color: #a47fd9; /* Color del texto del logo */
-      font-size: 50px; /* Tamaño del texto */
-      font-weight: 800; /* Grosor del texto */
-      text-decoration: none; /* Sin subrayado */
-    }
-    
-    .logo a:hover {
-      color: #4114e4; /* Cambio de color al pasar el mouse */
-    }
-    
-    /* Barra del menú debajo del encabezado */
-    .barra-menu {
-      width: 100%;
-      background-color: #b08972; /* Color más oscuro para el fondo de la barra */
-      height: 8vh; /* Altura de la barra del menú */
-      display: flex; /* Alinear los botones horizontalmente */
-      align-items: center; /* Centrar los botones verticalmente */
-      justify-content: center; /* Centrar el contenido horizontalmente */
-      box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2); /* Sombra */
-    }
-    
-    /* Menú de navegación */
-    .navegacion-menu ul {
-      list-style: none; /* Sin puntos en la lista */
-      display: flex; /* Elementos en una sola línea */
-      margin: 0;
-      padding: 0;
-    }
-    
-    .navegacion-menu ul li {
-      margin: 0 15px; /* Espaciado entre los botones */
-    }
-    
-    /* Estilo de los botones del menú */
-    .navegacion-menu ul li a {
-      font-size: 18px; /* Tamaño del texto */
-      padding: 10px 20px; /* Espaciado interno del botón */
-      background-color: #c4967e; /* Fondo que combina con la barra */
-      color: white; /* Color del texto */
-      text-decoration: none; /* Sin subrayado */
-      font-weight: 500; /* Grosor del texto */
-      border-radius: 5px; /* Bordes redondeados */
-      transition: background-color 0.3s, transform 0.2s; /* Transiciones suaves */
-    }
-    
-    .navegacion-menu ul li a:hover {
-      background-color: #ae6ff0; /* Cambio de color al pasar el mouse */
-      transform: scale(1.05); /* Efecto de zoom suave */
-    }
-    
-    /* fin header */
-    
-    
-     .cuerpo {
-        padding: 0%;
-        justify-content: center; /*Centra horizontalmente  */
-        align-items: center;/* Centra verticalmente  */
-        text-align: center;/*  Centra el texto en el contenedor  */
-      } 
-    
-      /*imagenes con fraces del inicio*/
-      /* .inicio {
-        display: flex;
-        width: auto;
-        height: 500px;
-      }
-      
-      .inicio img {
-        width: 0px;
-        flex-grow: 1;
-        opacity: 0.99;
-        transition: 0.5s ease;
-    
-      }
-      
-      .inicio img:hover {
-        cursor: zoom-in;
-        width: 90%;
-        opacity: 1;
-        filter: contrast(120%);
-      }
-    terminan aqui las imagenes del inicio */
-    
-    .cabecera{
-      height: 40%;
-      margin: 15px auto;
-      display: flex;
-      justify-content: center;
-      align-content: center;
-    
-    }
-    /*hordena las cajas una al lado de otra*/
-     .lista-cabecera {
-      /* margin: 0; */
-      width: 90%;
-      display: flex;
-      justify-content: center;
-      align-content: center;
-    
+  }
+  
+  .navegacion-menu ul li {
+    margin: 0 5px; /* Mayor espaciado entre botones */
+  }
+  
+  .navegacion-menu ul li a {
+    text-align: center center;
+    font-size: 20px; /* Aumentar tamaño de texto */
+    padding: 3px 30px; /* Aumentar el relleno */
+    background-color: #c4967e;
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+    border-radius: 5px;
+    transition: background-color 0.3s, transform 0.2s;
+  }
+  .navegacion-menu ul li a:hover {
+    background-color: #ae6ff0;
+    transform: scale(1.1); /* Mayor efecto de zoom */
+  }
+  
+  /* Botón activo */
+  .navegacion-menu ul li a.active {
+    background-color: #e0b9a2;
+    color: black;
+  }
+  
+  /* Submenu oculto por defecto */
+  /* Submenu oculto por defecto con transición */
+  .menu-desplegable {
+    position: relative; /* Posiciona el submenú en relación al botón principal */
+  }
+  
+  .menu-desplegable .submenu {
+    display: block; /* Asegura que se pueda animar */
+    position: absolute;
+    top: 100%; /* Ubicación debajo del botón */
+    left: 0;
+    background-color: #c4967e;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    z-index: 1000;
+    min-width: 200px; /* Tamaño mínimo del submenú */
+    max-height: 0; /* Altura inicial oculta */
+    overflow: hidden; /* Esconde contenido fuera del área visible */
+    transition: max-height 0.5s ease-in-out, opacity 0.5s ease-in-out; /* Suaviza el despliegue */
+    opacity: 0; /* Inicialmente invisible */
+  }
+  
+  /* Elementos del submenu */
+  .menu-desplegable .submenu li {
+    margin: 0;
+  }
+  
+  .menu-desplegable .submenu li a {
+    display: block;
+    padding: 10px 15px;
+    color: white;
+    text-decoration: none;
+    background-color: #c4967e;
+    transition: background-color 0.3s;
+  }
+  
+  .menu-desplegable .submenu li a:hover {
+    background-color: #ae6ff0;
+  }
+  
+  /* Mostrar el submenu al pasar el mouse */
+  .menu-desplegable:hover .submenu {
+    max-height: 500px; /* Ajusta según el contenido */
+    opacity: 1; /* Hace visible el submenú */
+  }
+  
+  /* fin header */
+  
+  
+   .cuerpo {
+      padding: 0%;
+      justify-content: center; /*Centra horizontalmente  */
+      align-items: center;/* Centra verticalmente  */
+      text-align: center;/*  Centra el texto en el contenedor  */
     } 
-    
-    /*Caja uno*/
-    .lista1 {
+  
+    /*imagenes con fraces del inicio*/
+    /* .inicio {
+      display: flex;
       width: auto;
-      height: auto;
-      flex:1;
-      display: flex;
-      justify-content: center;
-      list-style-type: none; /* Quita los puntos de la lista */
-    
+      height: 500px;
     }
     
-    .infol1 {
-      flex:1;
-      background: #53a0f3 ; 
-      padding: 50px; 
-      color: white; /* color del texto */
+    .inicio img {
+      width: 0px;
+      flex-grow: 1;
+      opacity: 0.99;
+      transition: 0.5s ease;
+  
     }
     
-    
-    .infol1 img {
-      width: 50px;
-      height: auto; 
-      top: 10px; 
-      right: 10px; 
+    .inicio img:hover {
+      cursor: zoom-in;
+      width: 90%;
+      opacity: 1;
+      filter: contrast(120%);
     }
-    
-    .infol1 h3 {
-      margin-top: 70px;
-      font-size: 36px; 
-    }
-    
-    .infol1 p {
-      margin-top: 10px; 
-      font-size: 15px; 
-    }
-    /*fin caja uno*/
-    
-    /*inico caja dos*/
-    .lista2 {
-      flex:1;
-      display: flex;
-      justify-content: center;
-      list-style-type: none;
-    
-    }
-    
-    .infol2 {
-      flex:1;
-      background-color: #82bbf7; 
-      padding: 50px; 
-      color: white; /* color del texto */
-    
-    }
-    
-    .infol2 img {
-      width: 50px; 
-      height: auto; 
-      top: 10px;
-      right: 10px; 
-    }
-    
-    .infol2 h3 {
-      margin-top: 70px;
-      font-size: 36px; 
-    }
-    
-    .infol2 p {
-      margin-top: 10px; /* Espaciado superior para el párrafo */
-      font-size: 15px; /* Tamaño del texto del párrafo */
-    }
-    /*fin caja dos*/
-    
-    /*inico caja tres*/
-    .lista3 {
-      flex:1;
-      display: flex;
-      justify-content: center;
-      list-style-type: none; 
-    
-    }
-    
-    .infol3 {
-      flex:1;
-      background-color: #6f8ba8; 
-      padding: 50px; 
-      color: white; /* color del texto */
-    }
-    
-    .infol3 img {
-      width: 50px; 
-      height: auto; 
-      top: 10px; 
-      right: 10px; 
-    }
-    
-    .infol3 h3 {
-      margin-top: 70px; 
-      font-size: 36px;
-    }
-    
-    .infol3 p {
-      margin-top: 10px; 
-      font-size: 15px;
-    }
-    /*fin caja tres*/
-    
-    /*titulo*/
-    .title h1 {
-      font-size: 5em;
-      font-family: 'Playfair Display'; /* Fuente elegante */
-      background: linear-gradient(45deg, #725134, #6d573c); 
-      background-clip: text; 
-      color: transparent;
-      text-align: center;
-      text-shadow: 5px 5px 2px rgba(82, 65, 48, 0.315); 
-      padding-top: 10px;
-    }
-    
-    
-    .parrafos {
-      display: flex;
-      flex-direction: column;
-      gap: 20px;  
-      text-align: center; 
-      margin: 100px 200px ;
-    
-    }
-    
-    .parrafos p {
-          font-size: 3em;
-          font-family: 'Playfair Display'; 
-          background: linear-gradient(45deg, #725134, #6d573c); 
-          background-clip: text; 
-          color: transparent;
-          text-align: center;
-          text-shadow: 5px 5px 2px rgba(82, 65, 48, 0.315); 
-          margin-bottom: 20px;
-    }
-    
-    /*pie de pagina*/
-    footer {
-      height: 150px; ;
-      display: flex;
-       background-color: #af907e;
-    
-      align-items: center;
-      text-align: center;
-      justify-content: center;
-      color: #FFF;
-    }
-    
-    .footer-content img {
-      display: flex;
-      height: 40px;
-      margin:10px;
-    }
-    
-    .buttons{
-    min-width: 700px;
+  terminan aqui las imagenes del inicio */
+  
+  .cabecera{
+    height: 40%;
+    margin: 15px auto;
     display: flex;
-    justify-content: space-around;
-    }
+    justify-content: center;
+    align-content: center;
+  
+  }
+  /*hordena las cajas una al lado de otra*/
+   .lista-cabecera {
+    /* margin: 0; */
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+  
+  } 
+  
+  /*Caja uno*/
+  .lista1 {
+    width: 200px;
+    height: 280px;
+    display: flex;
+    border-radius: 10px;
+    transition: 0.4s ease-out;
+    left:0px;
+  }
+  .lista1:hover{
+    transform: translateY(-10px);
+    transition: 0.4s ease-out ;
+  }
+  .lista1 h2{
+    color: black;
+    font-size: 1.2rem;
+    padding: 2px ;
+    text-align: center;
+    font-weight: bold;
+  }
+  .lista1 li{
+    color: rgba(221, 219, 217, 0.979);
+    padding: 3px;
+    font-size: 1rem;
+    font-weight: bold;
+    list-style:disc;
+  }
+  .infol1 {
+    background-image: linear-gradient( rgba(0, 0, 0,0.5), rgba(0,0,0,0.5)) , url(/img/TERAPIA\ DE\ BARRAS.jpg);
     
-    .buttons a {
-      display: flex;
-      text-decoration: none;
-      font-size: 20px;
-      width: 30px;
-      height: 30px;
-      line-height: 30px;
-      text-align: center;
-      background: #314652;
-      color: #f1f1f1;
-      border-radius: 50%;
-      box-shadow: 2px 2px 5px rgba(0, 0, 0, .5);
-      transition: all .4s ease-in-out;
-    }
+  }
+  /*inico caja dos*/
+  .lista2{
+    width: 200px;
+    height: 280px;
+    display: flex;
+    border-radius: 10px;
+    transition: 0.4s ease-out;
+    left:0px;
+  }
+  .lista2:hover{
+    transform: translateY(-10px);
+    transition: 0.4s ease-out ;
+  }
+  .lista2 h2{
+    color: black;
+    font-size: 1.2rem;
+    padding: 2px ;
+    text-align: center;
+    font-weight: bold;
+  }
+  .lista2 li{
+    color: rgba(221, 219, 217, 0.979);
+    padding: 3px;
+    font-size: 1rem;
+    font-weight: bold;
+    list-style:disc;
+  }
+  .infol2 {
+    box-shadow: 2px 2px 10px rgb(54, 8, 114,0.5);
+    background:  #b08972; 
     
-    .buttons a:hover {
-      display: flex;
-    transform: scale(1.2);
-    }
+  }
+  
+  .infol2 {
+    background-image: linear-gradient( rgba(0, 0, 0,0.5), rgba(0,0,0,0.5)) , url(/img/tameana2.webp);
+    
+  }
+  /*inico caja tres*/
+  .lista3 {
+    width: 200px;
+    height: 280px;
+    display: flex;
+    border-radius: 10px;
+    transition: 0.4s ease-out;
+    left:0px;
+  }
+  .lista3:hover{
+    transform: translateY(-10px);
+    transition: 0.4s ease-out ;
+  }
+  .lista3 h2{ 
+     color: black;
+    font-size: 1.2rem;
+    padding: 2px ;
+    text-align: center;
+    font-weight: bold;
+  }
+  .lista3 li{
+    color: rgba(221, 219, 217, 0.979);
+    padding: 3px;
+    font-size: 1rem;
+    font-weight: bold;
+    list-style:disc;
+  }
+  .infol3 {
+    box-shadow: 2px 2px 10px rgb(54, 8, 114,0.5);
+    background: #b08972; 
+  }
+  .infol3 {
+    background-image: linear-gradient( rgba(0, 0, 0,0.5), rgba(0,0,0,0.2)) , url(/img/terapia-reiki2.jpg);
+  }
+  /*fin caja tres*/
+  
+  /*titulo*/
+  .title h1 {
+    font-size: 5em;
+    font-family: 'Playfair Display'; /* Fuente elegante */
+    background: linear-gradient(45deg, #725134, #6d573c); 
+    background-clip: text; 
+    color: transparent;
+    text-align: center;
+    text-shadow: 5px 5px 2px rgba(82, 65, 48, 0.315); 
+    padding-top: 10px;
+  }
+  
+  
+  .parrafos {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;  
+    text-align: center; 
+    margin: 100px 200px ;
+  
+  }
+  
+  .parrafos p {
+        font-size: 3em;
+        font-family: 'Playfair Display'; 
+        background: linear-gradient(45deg, #725134, #6d573c); 
+        background-clip: text; 
+        color: transparent;
+        text-align: center;
+        text-shadow: 5px 5px 2px rgba(82, 65, 48, 0.315); 
+        margin-bottom: 20px;
+  }
+  
+  /*pie de pagina*/
+  footer {
+    height: 150px; ;
+    display: flex;
+     background-color: #af907e;
+  
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    color: #FFF;
+  }
+  
+  .footer-content img {
+    display: flex;
+    height: 40px;
+    margin:10px;
+  }
+  
+  .buttons{
+  min-width: 700px;
+  display: flex;
+  justify-content: space-around;
+  }
+  
+  .buttons a {
+    display: flex;
+    text-decoration: none;
+    font-size: 20px;
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    background: #314652;
+    color: #f1f1f1;
+    border-radius: 50%;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, .5);
+    transition: all .4s ease-in-out;
+  }
+  
+  .buttons a:hover {
+    display: flex;
+  transform: scale(1.2);
+  }
